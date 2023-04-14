@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:stretchColumns="*"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E17373"
+            android:gravity="center"
+            android:text="THÔNG TIN CÁ NHÂN"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Họ Tên : "   />
+
+            <EditText
+                android:id="@+id/edittext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="16"
+                android:text="Doan ai nuong"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="CMND: "   />
+
+            <EditText
+                android:id="@+id/edittext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="16"
+                android:text="2505913648"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E17373"
+            android:gravity="center"
+            android:text="BẰNG CẤP"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+<RadioGroup
+    android:id="@+id/radiogroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radiobuton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRUNG CẤP"/>
+
+            <RadioButton
+                android:id="@+id/radiobuton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAO ĐẲNG"/>
+            <RadioButton
+                android:id="@+id/radiobuton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ĐẠI HỌC"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E17373"
+            android:gravity="center"
+            android:text="SỞ THÍCH"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/radiobuton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ĐỌC BÁO"/>
+
+            <CheckBox
+                android:id="@+id/radiobuton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ĐỌC SÁCH"/>
+            <CheckBox
+                android:id="@+id/radiobuton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ĐỌC Coding"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textview6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E17373"
+            android:gravity="center"
+            android:text="THÔNG TIN BỔ SUNG"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edittext4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text=""
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GỬI THÔNG TIN"
+            tools:ignore="TextSizeCheck" />
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
