@@ -61,7 +61,7 @@ public class quanlybanhang extends AppCompatActivity {
         else
             Toast.makeText(this, "them khong thanh cong", Toast.LENGTH_SHORT).show();
     }
-
+//test push
     public void xoa()
     {
         String MaSV=editMS.getTest().toString();
